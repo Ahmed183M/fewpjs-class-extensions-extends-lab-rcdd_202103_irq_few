@@ -18,8 +18,8 @@ class Triangle extends Polygon{
   get isValid(){
     let valid = true;
     if(this.sides.length == 3) {
-      let valid
-      this.sides.forEach()
+      if(this.sides[0]+this.sides[1]<this.sides[2] || this.sides[1]+this.sides[2]<this.sides[0] || this.sides[0]+this.sides[2]<this.sides[1]) valid = false;
+      return valid;
     }
     else return false;
   }
