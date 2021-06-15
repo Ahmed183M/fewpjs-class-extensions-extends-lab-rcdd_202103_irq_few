@@ -27,7 +27,11 @@ class Triangle extends Polygon{
 
 class Square extends Polygon{
   get isValid(){
-    if(this.sides.length == 4) return true;
+    let valid = true;
+    if(this.sides.length == 4) {
+      if(this.sides[0]+this.sides[1]<this.sides[2] || this.sides[1]+this.sides[2]<this.sides[0] || this.sides[0]+this.sides[2]<this.sides[1]) valid = false;
+      return valid;
+    }
     else return false;
   }
   
