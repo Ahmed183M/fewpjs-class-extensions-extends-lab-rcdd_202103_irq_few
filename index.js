@@ -16,7 +16,11 @@ class Polygon{
 
 class Triangle extends Polygon{
   get isValid(){
-    if(this.sides.length == 3) return true;
+    let valid = true;
+    if(this.sides.length == 3) {
+      let valid
+      this.sides.forEach()
+    }
     else return false;
   }
 }
